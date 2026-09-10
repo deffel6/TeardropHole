@@ -1,0 +1,19 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "author": "det",
+    "description": {
+        "": "Wandelt runde Löcher in Tränenform-Löcher um, damit sie beim FDM-3D-Druck ohne Stützmaterial gedruckt werden können."
+    },
+    "editEnabled": true,
+    "iconFilename": "",
+    "id": "TeardropHole",
+    "name": "TeardropHole",
+    "productSupport": {
+        "Fusion360": true
+    },
+    "runOnStartup": false,
+    "supportedOS": "windows|mac",
+    "userDataFolder": true,
+    "version": "2.6.3-debug"
+}
