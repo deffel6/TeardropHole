@@ -6,14 +6,10 @@ Wenn man in Fusion 360 ein rundes Loch konstruiert, das später **liegend** gedr
 
 Die bekannte Lösung dafür ist die **Tränenform** (teardrop hole): Man ersetzt den oberen Teil des Kreises durch eine Spitze. Jede Wand bleibt dann innerhalb des Winkels, den der Drucker ohne Stütze schafft (meist 45°) – der Rest des Lochs bleibt ein ganz normaler Kreis.
 
-```
-  Vorher (Kreis)         Nachher (Tränenform)
-     ______                   ^
-    /      \                 /|\      <- Spitze, druckbarer Winkel
-   |        |               /   \
-    \______/               |     |    <- unten weiterhin rund
-                             \___/
-```
+<p align="center">
+  <img src="docs/teardrop.svg" width="660"
+       alt="Links ein rundes Loch, dessen oberer Bereich rot gestrichelt als Überhang markiert ist. Rechts dieselbe Bohrung als Tränenform: der untere Teil bleibt kreisrund, oben laufen zwei Flanken unter 45 Grad zu einer Spitze zusammen.">
+</p>
 
 ## Was macht das Add-In?
 

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300"
+     role="img" aria-label="Vergleich zwischen rundem Loch und Traenenform">
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="5" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b949e"/>
+    </marker>
+    <style>
+      .t { font: 600 17px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .c { font: 400 14px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .s { font: 400 13px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      text { fill: #8b949e; }
+      .wand { fill: #8b949e; fill-opacity: .17; }
+      .kante { fill: none; stroke: #58a6ff; stroke-width: 2.5; }
+      .warn { fill: none; stroke: #f85149; stroke-width: 3.5;
+              stroke-dasharray: 6 5; stroke-linecap: round; }
+      .hilf { fill: none; stroke: #8b949e; stroke-width: 1.2;
+              stroke-dasharray: 4 4; }
+    </style>
+  </defs>
+
+  <!-- Druckrichtung -->
+  <line x1="40" y1="240" x2="40" y2="115" stroke="#8b949e" stroke-width="1.6"
+        marker-end="url(#pfeil)"/>
+  <text class="s" x="30" y="178" text-anchor="middle"
+        transform="rotate(-90 30 178)">Druckrichtung</text>
+
+  <!-- ─── links: rundes Loch ─────────────────────────────────────────── -->
+  <text class="t" x="190" y="42" text-anchor="middle">Vorher · Kreis</text>
+
+  <path class="wand" fill-rule="evenodd"
+        d="M85 70 H295 V250 H85 Z
+           M138 165 A52 52 0 1 0 242 165 A52 52 0 1 0 138 165 Z"/>
+  <circle class="kante" cx="190" cy="165" r="52"/>
+  <path class="warn" d="M153.23 128.23 A52 52 0 0 1 226.77 128.23"/>
+
+  <text class="c" x="190" y="277" text-anchor="middle">oben Überhang – Fäden, ovale Öffnung</text>
+
+  <!-- ─── rechts: Tränenform ─────────────────────────────────────────── -->
+  <text class="t" x="510" y="42" text-anchor="middle">Nachher · Tränenform</text>
+
+  <path class="wand" fill-rule="evenodd"
+        d="M405 70 H615 V250 H405 Z
+           M473.23 138.23 A52 52 0 1 0 546.77 138.23 L510 101.46 Z"/>
+  <path class="kante"
+        d="M473.23 138.23 A52 52 0 1 0 546.77 138.23 L510 101.46 Z"/>
+
+  <path class="hilf" d="M510 101.46 V180"/>
+  <path class="hilf" d="M510 131.46 A30 30 0 0 0 531.21 122.67"/>
+  <text class="s" x="543" y="134">45°</text>
+
+  <text class="c" x="510" y="277" text-anchor="middle">Spitze im druckbaren Winkel – ohne Stütze</text>
+</svg>
